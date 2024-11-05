@@ -1,3 +1,8 @@
+// fvchs089 aka. Souim
+// JavaScript um die Scheinwerfer bei CarXDrift blinken zu lassen.
+// KINO-Mod wird benötigt!
+// Scheinwerfer müssen auf "N" gebunden sein!
+
 let badusb = require("badusb");
 
 // Konfiguration für das HID-Device (USB Keyboard) einrichten
@@ -16,5 +21,4 @@ while (true) {
     delay(20);                     // x Milli/Sekunden warten
 }
 
-// Am Ende aufräumen, falls die Schleife jemals verlassen wird
 badusb.quit();                        // USB-Port zurücksetzen
